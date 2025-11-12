@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISolver - How AI Can Help Humans to Solve Problems? </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="web3-bg">
+        <div class="grid-lines"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="particles-container"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-glow">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <span class="logo-text">AI<span class="logo-accent">SOLVER</span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#problems" class="nav-link">Problems</a></li>
+                <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                <li><a href="#quiz" class="nav-link">AI Match</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn-connect" onclick="connectWallet()">
+                    <i class="fas fa-plug"></i>
+                    Connect AI
+                </button>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    NEXT-GEN AI SOLUTIONS
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Bagaimana AI Dapat Membantu </span>
+                    <span class="title-line gradient-text">Manusia Memecahkan Masalah</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Kecerdasan buatan yang dirancang untuk membantu manusia memecahkan masalah kompleks. mendorong inovasi di berbagai sisi, kecepatan adaptif, dan keamanan, AI ini menghadirkan
+                    <span class="highlight">solusi cerdas</span> yang memperkuat kemampuan manusia dalam menghadapi tantangan masa depan.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" data-count="421">0</div>
+                        <div class="stat-label">Million Solutions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" data-count="3518">0</div>
+                        <div class="stat-label">AI Models</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$0.002</div>
+                        <div class="stat-label">Avg. Cost per Solution</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('quiz')">
+                        <span>Start Building</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary" onclick="exploreEcosystem()">
+                        <i class="fas fa-compass"></i>
+                        Explore Ecosystem
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="neural-network">
+                    <div class="node central-node">
+                        <div class="node-core"></div>
+                        <div class="node-pulse"></div>
+                    </div>
+                    <div class="node node-1">
+                        <div class="node-core"></div>
+                    </div>
+                    <div class="node node-2">
+                        <div class="node-core"></div>
+                    </div>
+                    <div class="node node-3">
+                        <div class="node-core"></div>
+                    </div>
+                    <div class="node node-4">
+                        <div class="node-core"></div>
+                    </div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                </div>
+
+                <div class="floating-card card-1">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-robot"></i>
+                    <h4>Machine Learning</h4>
+                    <p>Adaptive algorithms</p>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-network-wired"></i>
+                    <h4>Neural Networks</h4>
+                    <p>Deep learning</p>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Secure AI</h4>
+                    <p>Encrypted intelligence</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore AI ecosystem</span>
+        </div>
+    </section>
+
+    <section id="ecosystem" class="ecosystem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI Ecosystem</h2>
+                <p class="section-subtitle">Telusuri kekuatan dan inovasi di balik jaringan AI terdesentralisasi kami</p>
+            </div>
+
+            <div class="ecosystem-grid">
+                <div class="eco-card">
+                    <div class="eco-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Efficient</h3>
+                    <p>Komputasi AI ramah lingkungan dengan efisien energi maksimal</p>
+                    <div class="eco-tag">Smarter Future</div>
+                </div>
+
+                <div class="eco-card">
+                    <div class="eco-icon">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                    <h3>Scalable</h3>
+                    <p>Skabilitas tanpa batas untuk dunia yang lebih cerdas</p>
+                    <div class="eco-tag">Unlimited Scalability</div>
+                </div>
+
+                <div class="eco-card">
+                    <div class="eco-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global</h3>
+                    <p>AI Global, terdistribusi di lebih dari 3.000 titik di dunia</p>
+                    <div class="eco-tag">Worldwide</div>
+                </div>
+
+                <div class="eco-card">
+                    <div class="eco-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast</h3>
+                    <p>Kinerja AI yang cepat secepat pikiran dan kecepatan real-time</p>
+                    <div class="eco-tag">Real-time</div>
+                </div>
+            </div>
+
+            <div class="live-stats">
+                <div class="stat-item">
+                    <div class="stat-main">421,071,540</div>
+                    <div class="stat-label">Total AI Solutions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-main">3,518</div>
+                    <div class="stat-label">Active AI Nodes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-main">$0.002</div>
+                    <div class="stat-label">Avg Solution Cost</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-main">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problems" class="problems">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Human Problems We Solve</h2>
+                <p class="section-subtitle">Mengoptimalkan potensi kecerdasan buatan digunakan untuk menghadapi berbagai tantangan global</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="problem-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="problem-tag">Healthcare</div>
+                    </div>
+                    <h3>Medical Diagnosis</h3>
+                    <p>Penerapan kecerdasan buatan dalam deteksi dini serta pengembangan rencana perawatan yang dirancang khusus bagi setiap individu</p>
+                    <ul class="problem-features">
+                        <li>Lebih Awal Terdeteksi, Lebih Aman Terlindungi.</li>
+                        <li>Pengobatan yang Cerdas</li>
+                        <li>Pantauan Cerdas</li>
+                    </ul>
+                    <div class="card-metrics">
+                        <div class="metric">
+                            <span class="metric-value">99.2%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">70%</span>
+                            <span class="metric-label">Faster</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="problem-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="problem-tag">Education</div>
+                    </div>
+                    <h3>Smart Learning</h3>
+                    <p>Sistem belajar yang fleksibel dan disesuaikan dengan kebutuhan masing-masing individu</p>
+                    <ul class="problem-features">
+                        <li>Pembelajaran yang dibutuhkan untuk setiap individu.</li>
+                        <li>Masukan secara langsung.</li>
+                        <li>Evaluasi kemampuan untuk mendukung perkembangan berkelanjutan.</li>
+                    </ul>
+                    <div class="card-metrics">
+                        <div class="metric">
+                            <span class="metric-value">40%</span>
+                            <span class="metric-label">Better Outcomes</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">50%</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="problem-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="problem-tag">Environment</div>
+                    </div>
+                    <h3>Climate Solutions</h3>
+                    <p>Sistem kecerdasan buatan untuk pemantauan lingkungan dan penguatan praktik berkelanjutan</p>
+                    <ul class="problem-features">
+                        <li>Prediksi Iklim</li>
+                        <li>Pemantauan lingkungan dan pengelolaan sumber daya berkelanjutan melalui teknologi AI</li>
+                        <li>Pollution control</li>
+                    </ul>
+                    <div class="card-metrics">
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">Efficiency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI-Powered Solutions</h2>
+                <p class="section-subtitle">Next-generation artificial intelligence for real-world problems</p>
+            </div>
+
+            <div class="solutions-showcase">
+                <div class="solution-item">
+                    <div class="solution-visual">
+                        <div class="ai-core">
+                            <div class="core-animation"></div>
+                            <div class="data-stream"></div>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-badge">Deep Learning</div>
+                        <h3>Neural Network Intelligence</h3>
+                        <p>Sistem kecerdasan buatan yang mampu memahami, belajar, dan menyesuaikan diri seperti cara manusia berpikir dalam memecahkan masalah rumit.</p>
+                        
+                        <div class="solution-stats">
+                            <div class="solution-stat">
+                                <div class="stat-number">10x</div>
+                                <div class="stat-desc">Faster processing than traditional AI</div>
+                            </div>
+                            <div class="solution-stat">
+                                <div class="stat-number">99.9%</div>
+                                <div class="stat-desc">Accuracy in pattern recognition</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">PyTorch</span>
+                            <span class="tech-item">Neural Nets</span>
+                        </div>
+
+                        <button class="btn-solution">
+                            Deploy Solution
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="solution-item reverse">
+                    <div class="solution-visual">
+                        <div class="blockchain-viz">
+                            <div class="block-node"></div>
+                            <div class="block-node"></div>
+                            <div class="block-node"></div>
+                            <div class="blockchain-line"></div>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <div class="solution-badge">Blockchain AI</div>
+                        <h3>Decentralized Intelligence</h3>
+                        <p>Jaringan AI terdistribusi yang menjamin transparansi, keamanan, dan kepercayaan dalam pengambilan keputusan otomatis.</p>
+                        
+                        <div class="solution-stats">
+                            <div class="solution-stat">
+                                <div class="stat-number">3,000+</div>
+                                <div class="stat-desc">Distributed nodes</div>
+                            </div>
+                            <div class="solution-stat">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-desc">Transparent operations</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span class="tech-item">Smart Contracts</span>
+                            <span class="tech-item">IPFS</span>
+                            <span class="tech-item">Web3</span>
+                        </div>
+
+                        <button class="btn-solution">
+                            Explore Network
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Find Your AI Solution</h2>
+                <p class="section-subtitle">Connect with the perfect AI model for your specific challenge</p>
+            </div>
+
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="network-status">
+                        <div class="status-dot"></div>
+                        <span>AI Network Connected</span>
+                    </div>
+                    <div class="quiz-progress">
+                        <div class="progress-steps">
+                            <div class="step active">1</div>
+                            <div class="step">2</div>
+                            <div class="step">3</div>
+                            <div class="step">4</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-content">
+                    <div class="question-container">
+                        <div class="question-header">
+                            <span class="question-number">Query <span id="currentQuestion">1</span>/4</span>
+                            <h3 id="questionText">Select your problem domain</h3>
+                        </div>
+                        
+                        <div class="options-grid" id="optionsContainer">
+                        </div>
+
+                        <div class="quiz-actions">
+                            <button class="btn-nav prev" id="prevBtn" onclick="previousQuestion()" disabled>
+                                <i class="fas fa-arrow-left"></i>
+                                Previous
+                            </button>
+                            <button class="btn-nav next" id="nextBtn" onclick="nextQuestion()">
+                                Next Query
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="result-container" id="resultContainer" style="display: none;">
+                        <div class="result-header">
+                            <div class="result-badge">
+                                <i class="fas fa-check-circle"></i>
+                                AI Solution Matched!
+                            </div>
+                            <h3>Your Personalized AI Recommendation</h3>
+                        </div>
+                        
+                        <div class="result-content" id="recommendationContent">
+                        </div>
+
+                        <div class="result-actions">
+                            <button class="btn-primary" onclick="deploySolution()">
+                                <i class="fas fa-rocket"></i>
+                                Deploy Solution
+                            </button>
+                            <button class="btn-secondary" onclick="restartQuiz()">
+                                <i class="fas fa-redo"></i>
+                                New Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-glow small">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="brand-info">
+                        <h3>AI<span>SOLVE</span></h3>
+                        <p>The Internet-Scale AI Problem Solver</p>
+                    </div>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h4>Network</h4>
+                        <a href="#">AI Nodes</a>
+                        <a href="#">Validators</a>
+                        <a href="#">Governance</a>
+                        <a href="#">Documentation</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Solutions</h4>
+                        <a href="#">Healthcare AI</a>
+                        <a href="#">Education AI</a>
+                        <a href="#">Environmental AI</a>
+                        <a href="#">Business AI</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <a href="#">Developers</a>
+                        <a href="#">Researchers</a>
+                        <a href="#">Partners</a>
+                        <a href="#">Grants</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Technology</h4>
+                        <a href="#">Neural Sharding</a>
+                        <a href="#">AI Models</a>
+                        <a href="#">APIs</a>
+                        <a href="#">White Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; AISOLVE Network 2025. Decentralized AI for Humanity Created by Alvian.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/alvparker"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alvian-firmansyah-a80447339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/youngmstrall?igsh=MWVwNmtzNmVmc2Zidg=="><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="connectionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Connect to AI Network</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="wallet-option">
+                    <i class="fas fa-plug"></i>
+                    <div class="wallet-info">
+                        <h4>AI Node Connection</h4>
+                        <p>Connect to decentralized AI network</p>
+                    </div>
+                    <button class="btn-connect-wallet" onclick="connectAI()">Connect</button>
+                </div>
+                <div class="network-info">
+                    <div class="info-item">
+                        <span>Network Status</span>
+                        <span class="status online">Online</span>
+                    </div>
+                    <div class="info-item">
+                        <span>Active Nodes</span>
+                        <span>3,518</span>
+                    </div>
+                    <div class="info-item">
+                        <span>Response Time</span>
+                        <span>~120ms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
